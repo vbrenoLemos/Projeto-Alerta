@@ -1,0 +1,314 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    background-color: white;
+    color: #4A4A4A; /* text-gray-800 */
+}
+
+/* Header Section */
+.header {
+    position: relative;
+    background: linear-gradient(to right, #6B46C1, #F6E05E); /* from-purple-500 to-yellow-500 */
+    color: white;
+}
+
+.header-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.header-content {
+    position: relative;
+    z-index: 10;
+    max-width: 1200px;
+    margin: auto;
+    padding: 3rem 1.5rem;
+    text-align: center;
+}
+
+.nav {
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+    font-size: 1.125rem; /* text-lg */
+}
+
+.nav-link {
+    text-decoration: none;
+    color: white;
+}
+
+.header-title {
+    font-size: 5rem; /* text-5xl */
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+.header-subtitle {
+    font-size: 1.5rem; /* text-2xl */
+    margin: 0;
+}
+
+.contact-button,
+.activity-button {
+    margin-top: 1.5rem;
+    padding: 0.75rem 1.5rem;
+    background-color: #ffce2b; /* bg-yellow-500 */
+    color: black;
+    font-weight: bold;
+    border-radius: 10px; /* rounded-full */
+    cursor: pointer;
+}
+
+.understand-button{
+    margin-top: 1.5rem;
+    margin-left: auto;
+    padding: 0.75rem 1.5rem;
+    background-color: #ffce2b; /* bg-yellow-500 */
+    color: black;
+    font-weight: bold;
+    border-radius: 10px; /* rounded-full */
+    cursor: pointer;
+}
+
+.contact-button:hover,
+.activity-button:hover,
+.understand-button {
+    background-color: #FFC300; /* Cor amarela mais clara para hover */
+}
+
+/* Main Content */
+.main-content {
+    max-width: 1200px;
+    margin: auto;
+    padding: 3rem 1.5rem;
+}
+
+.intro-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+    margin-bottom: 3rem;
+}
+
+.activities-section {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.activities-title {
+    font-size: 2rem; /* text-3xl */
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+}
+
+.activities-description {
+    margin-bottom: 3rem;
+}
+
+.activities-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+}
+
+@media (min-width: 768px) {
+    .activities-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.activity-card {
+    background: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+}
+
+.activity-icon {
+    font-size: 2rem; /* text-3xl */
+    margin-bottom: 1rem;
+}
+
+.activity-title {
+    font-size: 1.5rem; /* text-xl */
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.activity-description {
+    margin-bottom: 1rem;
+}
+
+.activity-button {
+    padding: 0.75rem 1.5rem;
+    background-color: #F6E05E; /* bg-yellow-500 */
+    color: black;
+    font-weight: bold;
+    border-radius: 9999px; /* rounded-full */
+    cursor: pointer;
+}
+
+.activity-button:hover {
+    background-color: #D69E2E; /* hover:bg-yellow-600 */
+}
+
+/* Curiosity Section */
+.curiosity-section {
+    position: relative;
+    background: url('your-background-image.jpg') center/cover no-repeat;
+    color: white;
+    padding: 3rem 1.5rem;
+}
+
+.curiosity-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.curiosity-content {
+    position: relative;
+    z-index: 10;
+    text-align: center;
+}
+
+.curiosity-title {
+    font-size: 2rem; /* text-3xl */
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.curiosity-text {
+    font-size: 1.25rem; /* text-xl */
+    margin-bottom: 1.5rem;
+}
+
+/* Testimonials Section */
+.testimonials-section {
+    text-align: center;
+    padding: 3rem 1.5rem;
+}
+
+.testimonials-title {
+    font-size: 2rem; /* text-3xl */
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+}
+
+.testimonials-description {
+    margin-bottom: 3rem;
+}
+
+.testimonials-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+}
+
+@media (min-width: 768px) {
+    .testimonials-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.testimonial-card {
+    background: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+}
+
+.testimonial-icon {
+    font-size: 2rem; /* text-3xl */
+    margin-bottom: 1rem;
+}
+
+.testimonial-name {
+    font-size: 1.5rem; /* text-xl */
+    font-weight: bold;
+}
+
+/* Footer Section */
+.footer {
+    background: linear-gradient(to right, #6B46C1, #F6E05E); /* from-purple-500 to-yellow-500 */
+    color: white;
+    padding: 3rem 1.5rem;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between; /* Espaço entre as duas seções */
+    align-items: center; /* Alinhar verticalmente */
+    padding: 3rem 1.5rem; /* Manter padding */
+}
+
+.footer-left {
+    text-align: left; /* Alinhar texto à esquerda */
+}
+
+.footer-right {
+    text-align: right; /* Alinhar texto à direita */
+    flex-grow: 1; /* Permite que essa seção ocupe o espaço restante */
+}
+
+.footer-title {
+    font-size: 2rem; /* text-3xl */
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.footer-contact {
+    font-size: 1.5em;
+    margin: 1.5rem 0;
+}
+
+.footer-link {
+    text-decoration: underline;
+    color: orange;
+}
+
+.footer-social {
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+    margin: 1.5rem 0;
+}
+
+.social-link {
+    font-size: 2rem; /* text-2xl */
+    color: white;
+}
+
+.footer-rights {
+    position: absolute; /* Posiciona de forma absoluta */
+    right: 1.5rem; /* Distância da direita */
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .header-title {
+        font-size: 2.5rem;
+    }
+
+    .header-subtitle {
+        font-size: 1.5rem;
+    }
+
+    .activities-title, .curiosity-title, .testimonials-title {
+        font-size: 1.5rem;
+    }
+
+    .footer-title {
+        font-size: 1.5rem;
+    }
+}
