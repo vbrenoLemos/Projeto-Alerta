@@ -3,6 +3,9 @@ body {
     margin: 0;
     background-color: white;
     color: #4A4A4A; /* text-gray-800 */
+    --amarelo-buton: #f5da17;
+    --laranja-bord: #c26c2f;
+    --preto-text: #303030;
 }
 
 /* Header Section */
@@ -57,10 +60,11 @@ body {
 .activity-button {
     margin-top: 1.5rem;
     padding: 0.75rem 1.5rem;
-    background-color: #ffce2b; /* bg-yellow-500 */
+    background-color: var(--amarelo-botao); /* bg-yellow-500 */
     color: black;
     font-weight: bold;
     border-radius: 10px; /* rounded-full */
+    border: none;
     cursor: pointer;
 }
 
@@ -68,16 +72,17 @@ body {
     margin-top: 1.5rem;
     margin-left: auto;
     padding: 0.75rem 1.5rem;
-    background-color: #ffce2b; /* bg-yellow-500 */
-    color: black;
+    background-color: var(--amarelo-botao); /* bg-yellow-500 */
+    color: var(--preto-text);
     font-weight: bold;
     border-radius: 10px; /* rounded-full */
+    border: 0.8px solid var(--laranja-bord);
     cursor: pointer;
 }
 
 .contact-button:hover,
 .activity-button:hover,
-.understand-button {
+.understand-button:hover {
     background-color: #FFC300; /* Cor amarela mais clara para hover */
 }
 
@@ -147,7 +152,7 @@ body {
 
 .activity-button {
     padding: 0.75rem 1.5rem;
-    background-color: #F6E05E; /* bg-yellow-500 */
+    background-color: var(--amarelo-botao); /* bg-yellow-500 */
     color: black;
     font-weight: bold;
     border-radius: 9999px; /* rounded-full */
@@ -239,7 +244,7 @@ body {
 
 /* Footer Section */
 .footer {
-    background: linear-gradient(to right, #6B46C1, #F6E05E); /* from-purple-500 to-yellow-500 */
+    background: linear-gradient(to right, #4A4A4A, var(--preto-text)); /* from-purple-500 to-yellow-500 */
     color: white;
     padding: 3rem 1.5rem;
     text-align: center;
@@ -274,7 +279,7 @@ body {
 
 .footer-link {
     text-decoration: underline;
-    color: orange;
+    color: var(--amarelo-botao);
 }
 
 .footer-social {
