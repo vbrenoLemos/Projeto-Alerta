@@ -42,9 +42,7 @@ body {
     color: white;
 }
 /*Fim header section*/
-
-
-.header-background-home{ /* imagem de fundo header home*/
+.header-background{
     background-image: url(assets/20e31bb56bf7e2bd0a1d9877ac90239e.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -56,9 +54,6 @@ body {
     height: 400px;
     position: absolute;
 }
-
-
-
 .header-content{
     display: flex;
     flex-direction: column;
@@ -290,7 +285,7 @@ body {
 .footer {
     background: linear-gradient(to right, #4A4A4A, var(--preto-text)); /* from-purple-500 to-yellow-500 */
     color: white;
-    padding: 3rem 1.5rem;
+    padding: 3.0rem 1.5rem;
     text-align: center;
 }
 
