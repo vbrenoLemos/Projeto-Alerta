@@ -116,7 +116,8 @@ body {
 
 .contact-button:hover,
 .activity-button:hover,
-.understand-button:hover {
+.understand-button:hover,
+.associate-button:hover {
     background-color: #FFC300; /* Cor amarela mais clara para hover */
 }
 
@@ -293,7 +294,7 @@ body {
     display: flex;
     justify-content: space-between; /* Espaço entre as duas seções */
     align-items: center; /* Alinhar verticalmente */
-    padding: 3rem 1.5rem; /* Manter padding */
+    padding: 2.4rem 1.5rem; /* Manter padding */
 }
 
 .footer-left {
