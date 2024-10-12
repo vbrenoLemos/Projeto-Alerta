@@ -1,0 +1,172 @@
+.header-background-ativ{ /* imagem de fundo header atividades*/
+    background-image: url(assets/BanerAlerta\ .png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+
+    z-index: -1;
+
+    width: 100%;
+    height: 400px;
+    position: absolute;
+}
+
+.main-section-atividades{
+    display: flex;
+    flex-direction: row;
+    width: Fixed (1,120px)px;
+    height: Hug (136px)px;
+    top: 552px;
+    left: 160px;
+    padding: 40px 0px 0px 0px;
+    gap: 272px;
+    border-radius: 16px 0px 0px 0px;
+    border: 1px 0px 0px 0px;
+    opacity: 0px;
+
+    border: 1px solid var(--border-general-default, #DCDCDC)
+}
+
+.services{ /* bloco inteiro das atividades*/
+    width: Hug (1,440px)px;
+height: Hug (1,323px)px;
+top: 728px;
+gap: 32px;
+opacity: 0px;
+
+}
+
+.activities-title-atv{
+    
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 43.2px;
+    text-align: center;
+    
+}
+
+.activities-description-atv{
+    
+font-size: 24px;
+font-weight: 500;
+line-height: 32.4px;
+text-align: center;
+
+        margin-bottom: 3rem;
+    
+}
+
+.atividades{ /* bloco exclusivo das atividade sem o titulo*/
+    width: 1440px;
+height: 400px;
+padding: 40px 160px 80px 302px;
+gap: 0px;
+opacity: 0px;
+
+}
+
+.bloco-descricao{
+    width: Fixed (544px)px;
+height: Hug (110px)px;
+top: 40px;
+left: 736px;
+gap: 16px;
+opacity: 0px;
+
+}
+
+.atividades-direita{
+    text-align: right;
+}
+
+.atividades-esquerda{
+    display: flex;
+    flex-direction: row;
+}
+
+.atividades-p{
+    
+font-size: 18px;
+font-weight: 500;
+line-height: 27px;
+text-align: right;
+
+
+
+}
+
+.depoimentos{
+ 
+/* Group 15 */
+
+
+width: 1120px;
+height: 244px;
+left: 160px;
+top: 2100px;
+
+
+
+}
+
+.depoimentos-text{
+ 
+width: 736px;
+height: 60px;
+left: 352px;
+top: 2100px;
+
+
+
+}
+
+.blocos-depoimentos{
+    display: flex;
+    flex-direction: row;
+    margin-top: 16px;
+
+
+
+}
+
+.depoimentos-usuarios{
+    /* Angular */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 16px;
+gap: 16px;
+
+width: 352px;
+height: 160px;
+
+background: #FFFFFF;
+border: 1px solid #DCDCDC;
+border-radius: 16px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+}
+
+
+
+.depoimentos-usuarios-text{
+    width: 256px;
+height: 65px;
+gap: 8px;
+opacity: 0px;
+
+
+    
+    
+    
+
+}

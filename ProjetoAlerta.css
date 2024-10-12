@@ -42,7 +42,9 @@ body {
     color: white;
 }
 /*Fim header section*/
-.header-background{
+
+
+.header-background-home{ /* imagem de fundo header home*/
     background-image: url(assets/20e31bb56bf7e2bd0a1d9877ac90239e.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -54,6 +56,9 @@ body {
     height: 400px;
     position: absolute;
 }
+
+
+
 .header-content{
     display: flex;
     flex-direction: column;
