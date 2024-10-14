@@ -13,7 +13,7 @@ body {
     font-family: 'Roboto', sans-serif;
     width: 100vw;
     background-color: white;
-    color: var(--preto-text); /* text-gray-800 */
+    color: var(--preto-text);
 }
 
 /* Início Header Section */
@@ -30,7 +30,7 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 0rem 2rem;
-    font-size: 1.5rem; /* text-lg */
+    font-size: 1.5rem;
     img{
         width: 100px;
     }
@@ -81,7 +81,7 @@ body {
     padding: 10.6rem 0rem 2% 6.25rem;
     color: var(--branco);
     h1{
-        font-size: 5rem; /* text-5xl */
+        font-size: 5rem;
         font-weight: bold;
         margin-bottom: 0;
         text-align: start;
@@ -99,10 +99,10 @@ body {
     font-size: 1.2rem;
     font-weight: 600;
 
-    background-color: var(--amarelo-main); /* bg-yellow-500 */
+    background-color: var(--amarelo-main);
     color: var(--preto-text);
  
-    border-radius: 10px; /* rounded-full */
+    border-radius: 10px;
     border: none;
 
     cursor: pointer;
@@ -206,7 +206,7 @@ body {
         font-size: 1rem;
         font-weight: 700;
 
-        background-color: var(--amarelo-main); /* bg-yellow-500 */
+        background-color: var(--amarelo-main);
         color: var(--preto-text);
 
         cursor: pointer;
@@ -294,7 +294,7 @@ body {
 }
 
 .testimonials-title {
-    font-size: 2rem; /* text-3xl */
+    font-size: 2rem;
     font-weight: bold;
     margin-bottom: 1.5rem;
 }
@@ -323,12 +323,12 @@ body {
 }
 
 .testimonial-icon {
-    font-size: 2rem; /* text-3xl */
+    font-size: 2rem;
     margin-bottom: 1rem;
 }
 
 .testimonial-name {
-    font-size: 1.5rem; /* text-xl */
+    font-size: 1.5rem;
     font-weight: bold;
 }
 
