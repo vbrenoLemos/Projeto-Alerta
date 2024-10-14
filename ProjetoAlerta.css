@@ -5,15 +5,18 @@
     --amarelo-main: #f5da17;
     --amarelo-hover: #FFC300;
     --laranja-bord: #c26c2f;
+    --card-border: #0B132412;
     --preto-text: #303030;
+    --preto-true: #000000;
     --branco: #FAFAFAFA;
     --branco-true: #FFFFFF;
 }
 body {
     font-family: 'Roboto', sans-serif;
     width: 100vw;
-    background-color: white;
+    background-color: var(--branco);
     color: var(--preto-text);
+    overflow-x: hidden;
 }
 
 /* Início Header Section */
@@ -51,7 +54,7 @@ body {
     color: var(--branco-true);
 }
 /*Fim header section*/
-.header-background{
+.header-background{             /* Background do "header" - imagem das crianças */
     background-image: url(assets/header-img.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -63,7 +66,7 @@ body {
     height: 400px;
     position: absolute;
 }
-.header-background-2{
+.header-background-2{           /* Background do "header" - filtro com transição preto para amarelo */
 
     position: absolute;
     z-index: -1;
@@ -126,9 +129,9 @@ body {
     gap: 17.5rem;
 }
 .intro-text p{
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     margin-top: 10px;
-    width: 500px;
+    width: 550px;
 }
 .intro-button{
     padding: 0.75rem 2rem;
@@ -181,8 +184,8 @@ body {
     width: 350px;
     height: 300px;
     background: var(--branco-true);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border: 1px solid #0B132412;
+    box-shadow: 0px 4px 10px 3px rgba(0, 0, 0, 0.1);
+    border: 1px solid var(--card-border);
     border-radius: 0.5rem;
     padding: 1rem 2rem;
     h3{
@@ -217,17 +220,6 @@ body {
     }
 }
 /*Fim do activities section*/
-
-
-
-.understand-button:hover,
-.associate-button:hover {
-    background-color: #FFC300; /* Cor amarela mais clara para hover */
-}
-
-
-
-
 
 /* Início Curiosity Section */
 .curiosity-section {
@@ -280,114 +272,117 @@ body {
     font-size: 1.25rem;
     margin-bottom: 1.5rem;
 }
+/*Fim da section curiosity*/
 
 
 
-
-
-
-/* Testimonials Section */
+/* Início da Testimonials Section */
 .testimonials-section {
-    margin-top: 3rem;
-    text-align: center;
-    padding: 3rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 8rem;
 }
-
 .testimonials-title {
-    font-size: 2rem;
-    font-weight: bold;
+    line-height: 2.5rem;
+    text-align: center;
     margin-bottom: 1.5rem;
-}
-
-.testimonials-description {
-    margin-bottom: 3rem;
-}
-
-.testimonials-grid {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 1.5rem;
-}
-
-@media (min-width: 768px) {
-    .testimonials-grid {
-        grid-template-columns: repeat(3, 1fr);
+    h2{
+        font-size: 2rem;
     }
+    p{
+        font-size: 1.5rem;
+    }
+}
+.testimonials-cards {
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 4rem;
 }
 
 .testimonial-card {
-    background: white;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 0.5rem;
-    padding: 1.5rem;
-}
+    display: flex;
+    width: 350px;
+    height: 160px;
 
+    background: var(--branco-true);
+
+    box-shadow: 0px 4px 10px 3px rgba(0, 0, 0, 0.1);
+    border-radius: 1rem;
+    border: 1px solid var(--card-border);
+
+    padding: 1rem;
+}
 .testimonial-icon {
     font-size: 2rem;
     margin-bottom: 1rem;
 }
-
-.testimonial-name {
-    font-size: 1.5rem;
-    font-weight: bold;
+.testimonial-card-text{
+    margin-left: 1rem;
+    h3{
+        font-size: 1.5rem;
+        font-weight: bold;
+        margin-bottom: 8px;
+    }
 }
+/*Fim da testimonials section*/
 
-/* Footer Section */
+/* Início do Footer */
 .footer {
-    background: linear-gradient(to right, #4A4A4A, var(--preto-text)); /* from-purple-500 to-yellow-500 */
-    color: white;
-    padding: 3.0rem 1.5rem;
-    text-align: center;
+    background: linear-gradient(to right, #4A4A4A, var(--preto-true));
+    color: var(--branco-true);
+    padding: 3rem 10rem;
 }
-
 .footer-content {
+    width: 100%;
     display: flex;
-    justify-content: space-between; /* Espaço entre as duas seções */
-    align-items: center; /* Alinhar verticalmente */
-    padding: 2.4rem 1.5rem; /* Manter padding */
+    justify-content: space-between;
 }
-
-.footer-left {
-    text-align: left; /* Alinhar texto à esquerda */
+.footer-left {   /* bloco da esquerda */
+    width: 400px;
+    text-align: left;
+    h2{
+        font-size: 2.5rem;
+        font-weight: 700;
+        margin-bottom: 3.25rem;
+    }
 }
-
 .footer-right {
-    text-align: right; /* Alinhar texto à direita */
-    flex-grow: 1; /* Permite que essa seção ocupe o espaço restante */
+    display: flex;
+    flex-direction: column;
+    text-align: right;
 }
+.right-content{
+    margin-bottom: 2rem;
+    p{
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+    }
+    a{
+        font-size: 1.5rem;
+        font-weight: 900;
+        text-decoration: none;
+        color: var(--amarelo-main);
 
-.footer-title {
-    font-size: 2rem; /* text-3xl */
-    font-weight: bold;
-    margin-bottom: 1rem;
+    }
 }
-
-.footer-contact {
-    font-size: 1.5em;
-    margin: 1.5rem 0;
-}
-
-.footer-link {
-    text-decoration: underline;
-    color: var(--amarelo-botao);
-}
-
 .footer-social {
     display: flex;
     justify-content: flex-end;
     gap: 1rem;
-    margin: 1.5rem 0;
+    a{
+        font-size: 3rem;
+        color: var(--branco-true);
+    }
 }
+.footer-copy{
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-top: 100px;
+}
+/*Fim do Footer*/
 
-.social-link {
-    font-size: 2rem; /* text-2xl */
-    color: white;
-}
 
-.footer-rights {
-    position: absolute; /* Posiciona de forma absoluta */
-    right: 1.5rem; /* Distância da direita */
-}
 
 /* Responsividade */
 @media (max-width: 768px) {
