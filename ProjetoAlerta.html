@@ -17,9 +17,9 @@
                 <img src="assets/logo-instituto.png" alt="">
 
                 <div class="navigation-links">
-                    <a href="#" class="nav-link">Início</a>
+                    <a href="#introducao" class="nav-link">Início</a>
                     <a href="#" class="nav-link">Quem somos</a>
-                    <a href="#" class="nav-link">Atividades</a>
+                    <a href="#atividades" class="nav-link">Atividades</a>
                     <a href="#" class="nav-link">Contribua</a>
                 </div>
             </nav>
@@ -40,7 +40,7 @@
     <main class="main-content">
 
         <!--Início section intro-->
-        <section class="intro-section">
+        <section class="intro-section" id="introducao">
             <div class="intro-text">
                 <p>O Instituto Alerta é um lugar de transformação, onde a música e o apoio emocional se unem para mudar vidas. Oferecemos a oportunidade de aprender, se expressar e crescer, ajudando cada pessoa a descobrir seu potencial. Aqui, acreditamos no poder da arte e do acolhimento para superar desafios e promover o bem-estar. Juntos, construímos um futuro mais forte e cheio de esperança.</p>
             </div>
@@ -49,7 +49,7 @@
         <!--Fim section intro-->
 
         <!--Início section atividades-->
-        <section class="activities-section">
+        <section class="activities-section" id="atividades">
             <div class="activity-text">
                 <h2>Nossas atividades</h2>
                 <p >Atividades oferecidas pelo Projeto Alerta</p>
@@ -60,21 +60,21 @@
                     <i class="fas fa-music activity-icon"></i> <!--Icone do card-->
                     <h3>Aulas de música</h3>
                     <p>Aula de música para a comunidade: Teclado, Guitarra, Baixo, Bateria e Canto.</p>
-                    <button>Saiba mais</button>
+                    <button onclick="navegarUrl()">Saiba mais</button>
                 </div>
 
                 <div class="activity-card">
                     <i class="fas fa-star-of-life activity-icon"></i> <!--Icone do card-->
                     <h3>Atendimento Psicológico</h3>
                     <p>Atendimento psicológico presencial ou remoto oferecido para a comunidade.</p>
-                    <button>Saiba mais</button>
+                    <button onclick="navegarUrl()">Saiba mais</button>
                 </div>
 
                 <div class="activity-card">
                     <i class="fas fa-exclamation-circle activity-icon"></i> <!--Icone do card-->
                     <h3>Em breve</h3>
                     <p>Em breve o Instituto Alerta trará mais atividades para benefício dos sócios.</p>
-                    <button>Saiba mais</button>
+                    <button onclick="navegarUrl()">Saiba mais</button>
                 </div>
             </div>
         </section>
@@ -169,5 +169,6 @@
 
         </div>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>

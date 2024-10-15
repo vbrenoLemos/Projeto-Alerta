@@ -11,7 +11,11 @@
     --branco: #FAFAFAFA;
     --branco-true: #FFFFFF;
 }
+html{
+    scroll-behavior: smooth;
+}
 body {
+    box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
     width: 100vw;
     background-color: var(--branco);
@@ -32,10 +36,10 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0rem 2rem;
+    padding: 1rem 2rem;
     font-size: 1.5rem;
     img{
-        width: 100px;
+        width: 50px;
     }
 }
 .navigation-links{
