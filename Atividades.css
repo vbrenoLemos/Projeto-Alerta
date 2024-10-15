@@ -78,7 +78,7 @@ flex-grow: 0;
 
 }
 
-.activities{
+section.activities{
     /* session/services */
 
 /* Auto layout */
@@ -91,7 +91,7 @@ gap: 32px;
 position: absolute;
 width: 1440px;
 height: 1323px;
-left: 0px;
+left: 3%;
 top: 728px;
 
 
@@ -383,7 +383,7 @@ text-align: center;
 position: absolute;
 width: 1120px;
 height: 244px;
-left: 160px;
+left: 14vw;
 top: 2100px;
 
 
