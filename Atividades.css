@@ -1,5 +1,5 @@
 .header-background-ativ{ /* imagem de fundo header atividades*/
-    background-image: url(assets/BanerAlerta\ .png);
+    background-image: url(assets/header-img.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -11,25 +11,30 @@
     position: absolute;
 }
 
-.main-section-atividades{
-    display: flex;
-    flex-direction: row;
-    width: Fixed (1,120px)px;
-    height: Hug (136px)px;
-    top: 552px;
-    left: 160px;
-    padding: 40px 0px 0px 0px;
-    gap: 272px;
-    border-radius: 16px 0px 0px 0px;
-    border: 1px 0px 0px 0px;
-    opacity: 0px;
-    margin-top: 30px;
-    margin-bottom: 40px;
 
-    border: 1px solid var(--border-general-default, #DCDCDC)
+.main-top{/* session/chamada */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 40px;
+gap: 272px;
+
+position: absolute;
+width: 1120px;
+height: 180px;
+left: 160px;
+top: 450px;
+
+background: #FFFFFF;
+border: 1px solid #DCDCDC;
+border-radius: 16px;
 }
 
-.associate-button{
+.main-top-button{
     /* button/large */
 
 /* Auto layout */
@@ -54,111 +59,373 @@ border-radius: 8px;
 flex: none;
 order: 1;
 flex-grow: 0;
+
+cursor: pointer;
 }
 
-.services{ /* bloco inteiro das atividades*/
-    width: Hug (1,440px)px;
-height: Hug (1,323px)px;
-top: 728px;
-gap: 32px;
-opacity: 0px;
+p > .main-top-button{
+    /* label */
 
-}
+width: 262px;
+height: 18px;
 
-.activities-title-atv{
-    
-    font-size: 32px;
-    font-weight: 700;
-    line-height: 43.2px;
-    text-align: center;
-    
-}
 
-.activities-description-atv{
-    
-font-size: 24px;
-font-weight: 500;
-line-height: 32.4px;
+font-style: normal;
+font-weight: bold;
+font-size: 18px;
+line-height: 100%;
+/* identical to box height, or 18px */
+display: flex;
+align-items: center;
 text-align: center;
+letter-spacing: 0.04em;
 
-        margin-bottom: 3rem;
-    
+color: #303030;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
 }
 
-.atividades{ /* bloco exclusivo das atividade sem o titulo*/
-    width: 1440px;
-height: 400px;
-padding: 40px 160px 80px 302px;
+.activities{
+    /* session/services */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 0px;
+gap: 32px;
+
+position: absolute;
+width: 1440px;
+height: 1323px;
+left: 0px;
+top: 728px;
+
+
+}
+
+.main-middle-activites{
+    /* title */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 0px;
+gap: 16px;
+
+width: 736px;
+height: 91px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+}
+
+div.main-middle-activites > h1{
+    width: 265px;
+height: 43px;
 gap: 0px;
 opacity: 0px;
+font-size: 2em;
 
 }
 
-.bloco-descricao{
-    width: Fixed (544px)px;
-height: Hug (110px)px;
-top: 40px;
-left: 736px;
-gap: 16px;
-opacity: 0px;
+div.main-middle-activites > p{
+    /* Atividades oferecidas pelo Projeto Alerta */
 
-}
+width: 736px;
+height: 32px;
 
-.atividades-direita{
-    text-align: right;
-}
 
-.atividades-esquerda{
-    display: flex;
-    flex-direction: row;
-}
 
-.atividades-p{
-    
-font-size: 18px;
 font-weight: 500;
-line-height: 27px;
+font-size: 24px;
+line-height: 32px;
+text-align: center;
+
+color: #303030;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+}
+
+.each-activitie:nth-child(even){
+     background: var(--bg-surface-base, #FAFAFA);
+    ;
+    
+}
+
+ div#music-activitie, div#medical-activitie, div#later-activitie {
+    /* Session/service */
+
+width: 1500px ;
+height: 400px;
+margin-left: 5%;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+border-radius: px;
+}
+
+
+/* Inicio do bloco da atividade de musica */
+#music-activitie > div.activitie-text{
+    /* Texts */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-end;
+padding: 0px;
+gap: 16px;
+
+position: absolute;
+width: 544px;
+height: 110px;
+left: 736px;
+top: 40px;
+top: calc(14% );
+
+
+
+}
+
+#music-activitie > div.activitie-text > h1 {
+
+    font-size: 2em;
+}
+
+.activitie-text-p-box{
+   
+
+width: 544px;
+height: 54px;
+
+
+font-weight: 500;
+font-size: 18px;
+line-height: 150%;
+
 text-align: right;
 
 
 
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
 }
 
-.depoimentos{
- 
-/* Group 15 */
+div.activities-text > p{
+    text-align: center;
+}
 
 
+#music-activitie > .icon-music{
+    /* icon-music */
+
+position: absolute;
+height: 280px;
+left: 20.97%;
+right: 59.58%;
+top: calc(14% );
+
+
+}
+
+/* Fim do bloco da atividade de musica */
+
+
+
+/* Inicio do bloco da atividade de saúde */
+
+
+#medical-activitie > div.activitie-text{
+ /* Frame 2 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 16px;
+
+position: absolute;
+width: 544px;
+height: 108px;
+left: 160px;
+top: calc(49% );
+
+
+
+
+}
+
+#medical-activitie > div.activitie-text > h1 {
+
+    font-size: 2em;
+}
+
+#medical-activitie > div.activitie-text > .activitie-text-p-box > p{
+   
+width: 500px;
+text-align: left;
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+}
+
+
+
+
+#medical-activitie > .icon-medical{
+/* icon-medical */
+
+position: absolute;
+height: 280px;
+left: 59.58%;
+right: 20.97%;
+top: calc(48% );
+
+
+
+
+
+}
+
+/* Fim do bloco "Em breve */
+
+
+/* Fim do bloco da atividade de saúde */
+
+/* Inicio do bloco "em breve" */
+
+#later-activitie > div.activitie-text{
+    /* Texts */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-end;
+padding: 0px;
+gap: 16px;
+
+position: absolute;
+width: 544px;
+height: 110px;
+left: 736px;
+top: 40px;
+top: calc(80% );
+
+
+
+}
+
+#later-activitie > div.activitie-text > h1 {
+
+    font-size: 2em;
+}
+
+.activitie-text-p-box{
+   
+
+width: 544px;
+height: 54px;
+
+
+font-weight: 500;
+font-size: 18px;
+line-height: 150%;
+
+text-align: right;
+
+
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+}
+
+div.activities-text > p{
+    text-align: center;
+}
+
+
+#later-activitie > .icon-alert{
+    /* icon-music */
+
+position: absolute;
+height: 280px;
+left: 20.97%;
+right: 59.58%;
+top: calc(80% );
+}
+
+/* Fim do bloco "Em breve */
+
+section.feedback{
+    /* Group 15 */
+
+text-align: center;
+position: absolute;
 width: 1120px;
 height: 244px;
 left: 160px;
 top: 2100px;
 
 
+}
+
+.feedback-grid{
+    /* cards */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+align-items: flex-start;
+align-content: flex-start;
+padding: 0px;
+gap: 32px;
+
+width: 1120px;
+height: 160px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
 
 }
 
-.depoimentos-text{
- 
-width: 736px;
-height: 60px;
-left: 352px;
-top: 2100px;
-
-
-
-}
-
-.blocos-depoimentos{
-    display: flex;
-    flex-direction: row;
-    margin-top: 16px;
-
-
-
-}
-
-.depoimentos-usuarios{
+.feedback-card {
+    
     /* Angular */
 
 box-sizing: border-box;
@@ -182,20 +449,64 @@ flex: none;
 order: 0;
 flex-grow: 0;
 
+}
+
+.feedback-icon{
+    /* icon-feedback */
+
+width: 48px;
+height: 48px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
 
 }
 
+.feedback-text{
+    /* texts */
 
-
-.depoimentos-usuarios-text{
-    width: 256px;
-height: 65px;
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
 gap: 8px;
-opacity: 0px;
+
+width: 256px;
+height: 65px;
 
 
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+}
+
+.footer-activitie{
     
+        background: linear-gradient(to right, #4A4A4A, var(--preto-text)); /* from-purple-500 to-yellow-500 */
+        color: white;
+        padding: 3.0rem 10rem;
+        text-align: center;
+        width: 105%;
+        
+        
     
-    
+}
+
+
+.bloco-footer{
+    /* footer */
+
+position: absolute;
+width: 1440px;
+height: 244px;
+left: 0px;
+top: 2400px;
 
 }
