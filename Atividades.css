@@ -1,15 +1,3 @@
-.header-background-ativ{ /* imagem de fundo header atividades*/
-    background-image: url(assets/header-img.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-
-    z-index: -1;
-
-    width: 100%;
-    height: 400px;
-    position: absolute;
-}
 
 
 .main-top{/* session/chamada */
