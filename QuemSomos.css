@@ -52,7 +52,7 @@ body{
     color: var(--branco-true);
 }
 /*Fim header section*/
-.header-background{             /* Background do "header" - imagem das crianças */
+.header-background{             /* Background do "header" - Gradient Preto */
     background-image: linear-gradient(to right, #4A4A4A, var(--preto-true));
     background-repeat: no-repeat;
     background-size: cover;
@@ -305,4 +305,105 @@ body{
 }
 /*Fim do Footer*/
 
+/* Responsividade */
 
+
+/*Dispositivos Móveis*/
+
+@media (max-width:768px) {
+    body{
+        overflow-x: hidden;
+    }
+    .header{
+        margin-left:15vw;
+    }
+    .header-content{
+        h1{
+            font-size: 1.2rem;
+        }
+    }
+    .psychologic-img img{
+        width: 240px; /* Ajuste o tamanho da imagem conforme necessário */
+        height: auto; /* Mantém a proporção da imagem */
+        margin-top: 3.5em;
+    }
+    .about-us-content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 3em;
+        color: var(--preto-text);
+        margin-bottom: 150px;
+        h1{
+            text-align: left;
+            font-size: 25px;
+            padding-left: 16em;
+            padding-right: 4em;
+            margin-bottom: 10px;
+    
+        }
+        p{
+           text-align: left;
+            font-size: 15px;
+            padding-right: 2em;
+        }
+    }
+    
+    .about-us-content-1{
+       
+            display: flex;
+            flex-direction: column;
+            margin-top: 5em;
+            color: var(--preto-text);
+            margin-bottom: 45vw;
+            padding-left: 1em;
+            h1{
+                text-align: left;
+                font-size: 25px;
+                margin-bottom: 10px;
+        
+            }
+            p{
+                text-align: left;
+                width: 60%;
+                font-size:15px;
+                padding-right: 5.3em;
+            }
+        }   
+    
+.img-lapada{
+    position: absolute;
+    z-index: -1;
+    margin-top: -100px;
+    margin-left: 450px;
+}
+
+.intro-button{
+    max-height: 50px;
+    padding: 0.75rem 2rem;
+    font-size: 14px;
+    background-color: var(--amarelo-main);
+    color: var(--preto-text);
+    font-weight: bold;
+    border-radius: 8px;
+    border: 0.8px solid var(--laranja-bord);
+    cursor: pointer;
+    transition: all 0.5s;  
+    margin-top: 12rem; 
+    margin-left: 1px;
+}
+
+.footer{
+    padding: 50px 40px;
+}
+.footer-left{
+    h2{
+        font-size: 30px;
+    }
+    button{
+        padding: 15px 10px 15px 10px;
+        font-size: 1em;
+    }
+}
+
+}
