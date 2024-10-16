@@ -51,6 +51,7 @@ body{
     text-decoration: none;
     color: var(--branco-true);
 }
+
 /*Fim header section*/
 .header-background{             /* Background do "header" - Gradient preto */
     background-image: linear-gradient(to right, #4A4A4A, var(--preto-true));
