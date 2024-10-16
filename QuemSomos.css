@@ -1,0 +1,307 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    --amarelo-main: #f5da17;
+    --amarelo-hover: #FFC300;
+    --laranja-bord: #c26c2f;
+    --card-border: #0B132412;
+    --preto-text: #303030;
+    --preto-true: #000000;
+    --branco: #FAFAFAFA;
+    --branco-true: #FFFFFF;
+    
+}
+
+body{
+    overflow-x: hidden;
+}
+/* Início Header Section */
+.header {
+    position: absolute;
+    background: rgba(0, 0, 0, 0.334);
+    border-radius: 20px;
+    color: var(--branco-true);
+    width: 75vw;
+    margin: 10px 200px;
+}
+.navigation{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    font-size: 1.5rem;
+    img{
+        width: 35px;
+    }
+}
+.navigation-links{
+    a{
+        margin: 0px 10px;
+        gap: 2rem;
+        transition: all 0.7s;
+    }
+
+    a:hover{
+        color: var(--amarelo-main);
+    }
+}
+.nav-link{
+    font-size: 0.8em;
+    text-decoration: none;
+    color: var(--branco-true);
+}
+/*Fim header section*/
+.header-background{             /* Background do "header" - imagem das crianças */
+    background-image: linear-gradient(to right, #4A4A4A, var(--preto-true));
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+
+    z-index: -2;
+
+    width: 100vw;
+    height: 400px;
+    position: absolute;
+}
+
+.header-content{
+    display: flex;
+    flex-direction: column;
+    justify-content:start;
+    line-height: 3rem;
+    padding: 10.6rem 0rem 2% 6.25rem;
+    color: var(--branco);
+    align-items: flex-end;
+    h1{
+        width: 70%;
+        text-align: right;  
+        font-size: 1.5em;
+        margin-bottom: 0;
+        padding-right: 4em;
+        line-height: 1.1em;
+        padding-bottom: 70px;
+        
+    }
+    
+}
+.about-us-inner {
+    display: flex; 
+}
+
+.psychologic-img {
+    margin-left: 3em;
+    margin-right: 8rem;
+    margin-top: -100px;
+    max-width: 100%;
+}
+
+.psychologic-img img {
+    width: 380px; /* Ajuste o tamanho da imagem conforme necessário */
+    height: auto; /* Mantém a proporção da imagem */
+}
+
+.about-us-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5em;
+    color: var(--preto-text);
+    margin-bottom: 100px;
+    h1{
+        text-align: left;
+        font-size: 32px;
+        padding-left: 7em;
+        padding-right: 4em;
+        margin-bottom: 10px;
+
+    }
+    p{
+        text-align: left;
+        width: 60%;
+        font-size: 24px;
+        padding-right: 5.3em;
+    }
+}
+
+.about-us-content-1{
+   
+        display: flex;
+        flex-direction: column;
+        margin-top: 5em;
+        color: var(--preto-text);
+        margin-bottom: 20vw;
+        padding-left: 1em;
+        h1{
+            text-align: left;
+            font-size: 32px;
+            margin-bottom: 10px;
+    
+        }
+        p{
+            text-align: left;
+            width: 60%;
+            font-size: 24px;
+            padding-right: 5.3em;
+        }
+    }   
+
+
+.curiosity-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 0;
+    color: var(--branco-true);
+    margin-bottom: 8em ;
+}
+.curiosity-img {
+    position: absolute;
+    background-image: url(assets/curiosity-img.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    z-index: -2;
+    width: 100vw;
+    height: 450px;
+}
+.curiosity-back{
+    position: absolute;
+    z-index: -1;
+    background-color: #30303092;
+    width: 100vw;
+    height: 450px;
+}
+.curiosity-content {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+}
+.curiosity-title {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+}
+.curiosity-description{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.curiosity-description p{
+    display: flex;
+    justify-content: center;
+    width: 700px;
+    font-size: 1.25rem;
+    margin-bottom: 1.5rem;
+}
+
+.contact-button{
+    width: 18rem;
+
+    padding: 1rem 0.5rem;
+
+    font-size: 1.2rem;
+    font-weight: 600;
+
+    background-color: var(--amarelo-main);
+    color: var(--preto-text);
+ 
+    border-radius: 10px;
+    border: none;
+
+    cursor: pointer;
+    transition: all 0.7s;
+}
+.contact-button:hover{
+    background-color: var(--amarelo-hover);
+}
+
+/*Fim da section curiosity*/
+
+.img-lapada{
+    position: absolute;
+    z-index: -1;
+    margin-top: -100px;
+    margin-left: 1000px;
+}
+
+.intro-button{
+    max-height: 50px;
+    padding: 0.75rem 2rem;
+    font-size: 1.2rem;
+    background-color: var(--amarelo-main);
+    color: var(--preto-text);
+    font-weight: bold;
+    border-radius: 8px;
+    border: 0.8px solid var(--laranja-bord);
+    cursor: pointer;
+    transition: all 0.5s;  
+    margin-top: 12rem; 
+    margin-left: 90px;
+}
+
+.intro-button:hover{
+    background-color: var(--amarelo-hover);
+}
+
+/* Início do Footer */
+.footer {
+    background: linear-gradient(to right, #4A4A4A, var(--preto-true));
+    color: var(--branco-true);
+    padding: 3rem 10rem;
+}
+.footer-content {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.footer-left {   /* bloco da esquerda */
+    width: 400px;
+    text-align: left;
+    h2{
+        font-size: 2.5rem;
+        font-weight: 700;
+        margin-bottom: 3.25rem;
+    }
+}
+.footer-right {
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+}
+.right-content{
+    margin-bottom: 2rem;
+    p{
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+    }
+    a{
+        font-size: 1.5rem;
+        font-weight: 900;
+        text-decoration: none;
+        color: var(--amarelo-main);
+
+    }
+}
+.footer-social {
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+    a{
+        font-size: 3rem;
+        color: var(--branco-true);
+    }
+}
+.footer-copy{
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-top: 100px;
+}
+/*Fim do Footer*/
+
+

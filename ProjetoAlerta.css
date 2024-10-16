@@ -11,7 +11,11 @@
     --branco: #FAFAFAFA;
     --branco-true: #FFFFFF;
 }
+html{
+    scroll-behavior: smooth;
+}
 body {
+    box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
     width: 100vw;
     background-color: var(--branco);
@@ -32,10 +36,10 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0rem 2rem;
+    padding: 1rem 2rem;
     font-size: 1.5rem;
     img{
-        width: 100px;
+        width: 50px;
     }
 }
 .navigation-links{
@@ -115,7 +119,11 @@ body {
     background-color: var(--amarelo-hover);
 }
 /*Fim do header section*/
-
+.img-lapada{
+    position: absolute;
+    z-index: -3;
+    margin-left: 1200px;
+}
 /* Main Content */
 /*Início intro section*/
 .intro-section {
