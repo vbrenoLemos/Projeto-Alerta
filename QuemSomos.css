@@ -52,7 +52,7 @@ body{
     color: var(--branco-true);
 }
 /*Fim header section*/
-.header-background{             /* Background do "header" - Gradient Preto */
+.header-background{             /* Background do "header" - Gradient preto */
     background-image: linear-gradient(to right, #4A4A4A, var(--preto-true));
     background-repeat: no-repeat;
     background-size: cover;
@@ -97,8 +97,8 @@ body{
 }
 
 .psychologic-img img {
-    width: 380px; /* Ajuste o tamanho da imagem conforme necessário */
-    height: auto; /* Mantém a proporção da imagem */
+    width: 380px; /* Ajustar o tamanho da imagem */
+    height: auto; /* Manter a proporção da imagem */
 }
 
 .about-us-content{
