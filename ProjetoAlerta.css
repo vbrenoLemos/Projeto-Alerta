@@ -122,7 +122,7 @@ body {
 .img-lapada{
     position: absolute;
     z-index: -3;
-    margin-left: 1200px;
+    margin-left: 1165px;
 }
 /* Main Content */
 /*Início intro section*/
@@ -287,6 +287,7 @@ body {
 /* Início da Testimonials Section */
 .testimonials-section {
     display: flex;
+    justify-content: center;
     flex-direction: column;
     align-items: center;
     margin-top: 8rem;
@@ -321,7 +322,7 @@ body {
 
     padding: 1rem;
 }
-.testimonial-icon {
+ .testimonial-icon { /* Ícone do card */
     font-size: 2rem;
     margin-bottom: 1rem;
 }
@@ -339,12 +340,14 @@ body {
 .footer {
     background: linear-gradient(to right, #4A4A4A, var(--preto-true));
     color: var(--branco-true);
-    padding: 3rem 10rem;
+    display: flex;
+    justify-content: center;
+    padding: 3rem;
 }
 .footer-content {
-    width: 100%;
     display: flex;
     justify-content: space-between;
+    gap: 10rem;
 }
 .footer-left {   /* bloco da esquerda */
     width: 400px;
@@ -393,20 +396,76 @@ body {
 
 
 /* Responsividade */
-@media (max-width: 768px) {
-    .header-title {
+@media only screen and (min-width: 768px) and (max-width: 1024px){
+    .header{
+        margin: 10px 50px;
+        width: 90vw;
+    }
+    .header-content{
+        padding: 10.6rem 0rem 2% 2rem;
+    }
+    .intro-section{
+        gap: 10rem;
+    }
+    .intro-text p {
+        font-size: 1.2rem;
+        width: 40vw;
+    }
+    .intro-button{
+        font-size: 1rem;
+        padding: 0.8rem 1rem;
+    }
+    .img-lapada{
+        margin-left: 65.5vw;
+    }
+    .activities-cards{
+        flex-direction: column;
+        align-items: center;
+    }
+    .activity-icon { /*ícone das atividades*/
         font-size: 2.5rem;
+        margin-bottom: 1rem;
     }
-
-    .header-subtitle {
+    .activity-card{
+        width: 75vw;
+        padding: 1.5rem 2rem;
+        h3{
+            font-size: 2rem;
+        }
+        p{
+            font-size: 1.5rem;
+            width: 330px;
+        }
+        button{
+            width: 10rem;
+            font-size: 1.3rem;
+        }
+    }
+    .curiosity-title{
         font-size: 1.5rem;
     }
 
-    .activities-title, .curiosity-title, .testimonials-title {
-        font-size: 1.5rem;
+    .testimonials-cards{
+        flex-direction: column;
     }
-
-    .footer-title {
-        font-size: 1.5rem;
+    .testimonial-card{
+        width: 75vw;
+        padding: 1.5rem 2rem;
+    }
+    .testimonial-card-text{
+        h3{
+            font-size: 2rem;
+            line-height: 3rem;
+            margin-bottom: 0;
+        }
+        p{
+            font-size: 1.3rem;
+        }
+    }
+    .footer{
+        padding: 3rem 2rem;
+    }
+    .footer-content{
+        gap: 0;
     }
 }

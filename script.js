@@ -1,5 +1,9 @@
 const botaoSaiba = document.querySelector('.saibaMais')
 
-function navegarUrl(){
+function navegarUrlAtividade(){
     window.location.href = 'Atividades.html'
+}
+
+function navegarUrlQuemSomos(){
+    window.location.href = 'QuemSomos.html'
 }
