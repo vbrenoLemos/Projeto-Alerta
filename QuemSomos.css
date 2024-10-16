@@ -195,6 +195,7 @@ body{
 .curiosity-description p{
     display: flex;
     justify-content: center;
+    align-items: center;
     width: 700px;
     font-size: 1.25rem;
     margin-bottom: 1.5rem;
