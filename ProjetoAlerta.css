@@ -57,6 +57,19 @@ body {
     text-decoration: none;
     color: var(--branco-true);
 }
+.menu{
+    cursor: pointer;
+    display: none;
+}
+.menu-bar{
+    display: block;
+    width: 30px;
+    height: 4px;
+    background-color: var(--branco);
+    border-radius: 5px;
+    margin: 5px auto;
+    transition: all 1s;
+}
 /*Fim header section*/
 .header-background{             /* Background do "header" - imagem das crianças */
     background-image: url(assets/header-img.png);
@@ -368,19 +381,19 @@ body {
 }
 .right-content{
     margin-bottom: 2rem;
+    font-size: 1.5rem;
     p{
-        font-size: 1.5rem;
         margin-bottom: 1rem;
     }
     a{
-        font-size: 1.5rem;
         font-weight: 900;
         text-decoration: none;
         color: var(--amarelo-main);
 
     }
 }
-.footer-social {
+.footer-social {  /* bloco da rede social */
+
     display: flex;
     justify-content: flex-end;
     gap: 1rem;
@@ -473,5 +486,202 @@ body {
     }
 }
 @media only screen and (max-width: 767px){
+    /*Header - Navigation*/
+    .header{
+        width: 100%;
+        margin: 0 ;
+        border-radius: 0;
+        background: rgba(0, 0, 0, 0.534);
+    }
+    .navigation{
+        padding: 1rem 2rem;
+        img{
+            width: 35px;
+        }
+    }
+    .menu{
+        display: block;
+    }
+    .menu.ativo .menu-bar:nth-child(1){
+        transform: translateY(10px) rotate(50deg);
+    }
+    .menu.ativo .menu-bar:nth-child(2){
+        opacity: 0;
+    }
+    .menu.ativo .menu-bar:nth-child(3){
+        transform: translateY(-8px) rotate(-50deg);
+    }
+    .navigation-links{
+        display: flex;
+        align-items: center;
+        gap: 30px;
+        position: fixed;
+        right: -100%;
+        top: 75px;
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+        background: var(--preto-true);
+        gap: -10px;
+        transition: 0.3s;
+    }
+    .navigation-links.ativo{
+        right: 0;
+    }
+    .nav-link{
+        margin: 16px 0;
+    }
+    /*Header-Navigation*/
+
+    /*Header text + button*/
+    .header-content{
+        padding: 7rem 1rem 2% 0.8rem;
+        line-height: 3rem;
+        h1{
+            font-size: 4rem;
+            line-height: 4rem;
+            font-weight: bold;
+        }
+        p{
+            font-size: 0.8rem;
+        }
+    }
+    .contact-button{
+        font-size: 1.2rem;
+        padding: 1rem 0.5rem;
+        width: 15rem;
+    }
+    /*Header text + button*/
+
+    .img-lapada{
+        margin-top: 700px;
+        margin-left: 90px;
+    }
     
+    /*Intro section*/
+    .intro-section{
+        flex-direction: column;
+        gap: 2rem;
+        align-items: center;
+    }
+    .intro-text p{
+        margin-top: 2.5rem;
+        font-size: 1.2rem;
+        width: 80vw;
+        text-align: center;
+    }
+    .intro-button{
+        padding: 0.75rem 1.5rem;
+        font-size: 1.2rem;
+    }
+    /*Intro section*/
+
+    /*Activity section*/
+    .activity-text{
+        p{
+            font-size: 1rem;
+        }
+        h2{
+            font-size: 1.5rem;
+        }
+    }
+    .activities-cards{
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    .activity-card{
+        width: 80vw;
+        padding: 1rem 1.5rem;
+        p{
+            width: 220px;
+            font-size: 1rem;
+        }
+        h3{
+            font-size: 1.2rem;
+        }
+    }
+    /*Activity section*/
+
+    /*Curiosity section*/
+    .none-bar{
+        display: none;
+    }
+    .curiosity-back, .curiosity-img{
+        height: 600px;
+    }
+    .curiosity-title{
+        flex-direction: column;
+        gap: 10px;
+        font-size: 1.8rem;
+    }
+    .curiosity-description p{
+        font-size: 1.2rem;
+        width: 80vw;
+    }
+    /*Curiosity section*/
+
+    /*Testimonials section*/
+    .testimonials-title{
+        line-height: 1rem;
+        h2{
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+        }
+        p{
+            line-height: 1.5rem;
+            font-size: 1.2rem;
+            width: 250px;
+        }
+    }
+    .testimonials-cards{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .testimonial-card{
+        width: 80vw;
+        height: 180px;
+        padding: 0.5rem;
+        img{
+            height: 2rem;
+        }
+    }
+    .testimonial-card-text p{
+        font-size: 1rem;
+        width: 48vw;
+    }
+    /*Testimonials section*/
+
+    /*Footer*/
+    .footer{
+        padding: 3rem 1rem;
+        flex-direction: column;
+    }
+    .footer-content{
+        flex-direction: column;
+        gap: 2rem;
+    }
+    .footer-left{
+        width: 100%;
+        h2{
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+    }
+    .footer-right{
+        text-align: left;
+    }
+    .right-content{
+        font-size: 1.2rem;
+    }
+    .footer-social{
+        justify-content: start;
+        a{
+            font-size: 2.8rem;
+        }
+    }
+    .footer-copy{
+        text-align: center;
+        font-size: 1rem;
+    }
+    /*Footer*/
 }
