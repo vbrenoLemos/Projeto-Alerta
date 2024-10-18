@@ -1,7 +1,7 @@
 .main-top {
     box-sizing: border-box;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     padding: 40px;
     gap: 32px;
@@ -125,6 +125,11 @@ div.activitie-text > h1{
     font-size: 2em;
 }
 
+.activitie-text-p-box{
+    
+    text-align: end;
+}
+
 #music-activitie > .icon-music, 
 #medical-activitie > .icon-medical, 
 #later-activitie > .icon-alert {
@@ -200,6 +205,53 @@ section.feedback {
 
 
 @media only screen and (max-width: 767px){
+ /*inicio do  header*/
+div.main-top{
+    gap: 12px;
+    padding-left: 10px;
+
+    h2{
+        text-align: center;
+    }
+    h3{
+        width: 50%;
+        font-size: 90%;
+        font-weight: bold;
+    }
+}
+
+.main-top-button{
+    
+    max-width: 370px;
+    height: 75px;
+    gap: 10px;
+    
+}
+    /* Fim do header */
+
+
+    div#music-activitie, div#medical-activitie, div#later-activitie{
+        gap: 10%;
+    }
+
+    #music-activitie > .icon-music > img, 
+    #medical-activitie > .icon-medical > img, 
+    #later-activitie > .icon-alert > img {
+    height: 200px;
+    width: 100px;
+}
+
+.activitie-text-p-box{
+    
+    text-align: end;
+   
+}
+
+.text-colum{
+    display: flex;
+    flex-direction: column;
+    
+}
 
 /* Testimonials section */
 .testimonials-title {
