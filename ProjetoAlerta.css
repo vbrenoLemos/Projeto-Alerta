@@ -135,7 +135,7 @@ body {
 .img-lapada{
     position: absolute;
     z-index: -3;
-    margin-left: 1165px;
+    margin-left: 76vw;
 }
 /* Main Content */
 /*Início intro section*/
@@ -514,15 +514,14 @@ body {
     .navigation-links{
         display: flex;
         align-items: center;
-        gap: 30px;
-        position: fixed;
+        gap: 15px;
+        position: absolute;
         right: -100%;
         top: 75px;
         width: 100%;
-        height: 100%;
+        height: 100vw;
         flex-direction: column;
         background: var(--preto-true);
-        gap: -10px;
         transition: 0.3s;
     }
     .navigation-links.ativo{
@@ -554,8 +553,9 @@ body {
     /*Header text + button*/
 
     .img-lapada{
+        width: 70vw;
         margin-top: 700px;
-        margin-left: 90px;
+        margin-left: 30vw;
     }
     
     /*Intro section*/
