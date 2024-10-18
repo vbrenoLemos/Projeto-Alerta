@@ -13,44 +13,7 @@
     
 }
 
-body{
-    overflow-x: hidden;
-}
-/* Início Header Section */
-.header {
-    position: absolute;
-    background: rgba(0, 0, 0, 0.334);
-    border-radius: 20px;
-    color: var(--branco-true);
-    width: 75vw;
-    margin: 10px 200px;
-}
-.navigation{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem 2rem;
-    font-size: 1.5rem;
-    img{
-        width: 35px;
-    }
-}
-.navigation-links{
-    a{
-        margin: 0px 10px;
-        gap: 2rem;
-        transition: all 0.7s;
-    }
 
-    a:hover{
-        color: var(--amarelo-main);
-    }
-}
-.nav-link{
-    font-size: 0.8em;
-    text-decoration: none;
-    color: var(--branco-true);
-}
 
 /*Fim header section*/
 .header-background{             /* Background do "header" - Gradient preto */
@@ -108,7 +71,7 @@ body{
     align-items: center;
     margin-top: 5em;
     color: var(--preto-text);
-    margin-bottom: 100px;
+    margin-bottom: 150px;
     h1{
         text-align: left;
         font-size: 32px;
@@ -225,12 +188,15 @@ body{
 
 /*Fim da section curiosity*/
 
-.img-lapada{
+.img-lamp-box{
+    display: flex;
     position: absolute;
+    width: 100vw;
     z-index: -1;
-    margin-top: -100px;
-    margin-left: 1000px;
+    justify-content: flex-end;
+    margin-top: -80px;
 }
+
 
 .intro-button{
     max-height: 50px;
@@ -311,12 +277,9 @@ body{
 
 /*Dispositivos Móveis*/
 
-@media (max-width:768px) {
-    body{
-        overflow-x: hidden;
-    }
+@media only screen and (max-width: 767px) {
     .header{
-        margin-left:15vw;
+      width: 100%;
     }
     .header-content{
         h1{
