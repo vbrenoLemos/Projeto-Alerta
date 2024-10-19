@@ -14,8 +14,6 @@
 }
 
 
-
-/*Fim header section*/
 .header-background{             /* Background do "header" - Gradient preto */
     background-image: linear-gradient(to right, #4A4A4A, var(--preto-true));
     background-repeat: no-repeat;
@@ -30,16 +28,17 @@
 }
 
 .header-content{
-    display: flex;
-    flex-direction: column;
-    justify-content:start;
-    line-height: 3rem;
     padding: 10.6rem 0rem 2% 6.25rem;
     color: var(--branco);
     align-items: flex-end;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: right;
+    width: 100%;
+
     h1{
-        width: 70%;
-        text-align: right;  
+        width: 70%; 
         font-size: 1.5em;
         margin-bottom: 0;
         padding-right: 4em;
@@ -49,64 +48,71 @@
     }
     
 }
-.about-us-inner {
-    display: flex; 
-}
 
+/* Fim do Header */
+
+/* Inicio Sobre nós */
+
+.about-us-inner {
+    display: flex;
+    width: 100%;
+}
+.about-us-inner-2{
+    display: flex;
+    flex-direction: column;
+}
+.about-us-biography{
+    flex:2;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3em;
+    color: var(--preto-text);
+    margin-bottom: 150px;
+    h1{
+        font-size: 30px;
+    }
+    p{
+    font-size: 18px;
+    }
+    li{
+        list-style: none;
+    }
+
+}
 .psychologic-img {
+    flex: 1;
     margin-left: 3em;
-    margin-right: 8rem;
-    margin-top: -100px;
+    margin-right: 8vw;
     max-width: 100%;
+    padding-top: 15vh;
 }
 
 .psychologic-img img {
-    width: 380px; /* Ajustar o tamanho da imagem */
+    width: 100%;
+    max-width: 380px; /* Ajustar o tamanho da imagem */
     height: auto; /* Manter a proporção da imagem */
 }
 
 .about-us-content{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 5em;
-    color: var(--preto-text);
-    margin-bottom: 150px;
-    h1{
-        text-align: left;
-        font-size: 32px;
-        padding-left: 7em;
-        padding-right: 4em;
-        margin-bottom: 10px;
-
-    }
-    p{
-        text-align: left;
-        width: 60%;
-        font-size: 24px;
-        padding-right: 5.3em;
-    }
-}
-
-.about-us-content-1{
-   
+    
         display: flex;
         flex-direction: column;
-        margin-top: 5em;
         color: var(--preto-text);
-        margin-bottom: 20vw;
-        padding-left: 1em;
+        padding-left: 2vw;
+        margin-bottom: 15   0px;
         h1{
             text-align: left;
-            font-size: 32px;
+            font-size: 30px;
             margin-bottom: 10px;
     
         }
         p{
             text-align: left;
             width: 60%;
-            font-size: 24px;
-            padding-right: 5.3em;
+            font-size: 18px;
+            margin-bottom: 50px;
         }
     }   
 
@@ -188,6 +194,7 @@
 
 /*Fim da section curiosity*/
 
+
 .img-lamp-box{
     display: flex;
     position: absolute;
@@ -199,7 +206,8 @@
 
 
 .intro-button{
-    max-height: 50px;
+    max-width: 30vw;
+    max-height: 10vh;
     padding: 0.75rem 2rem;
     font-size: 1.2rem;
     background-color: var(--amarelo-main);
@@ -209,8 +217,7 @@
     border: 0.8px solid var(--laranja-bord);
     cursor: pointer;
     transition: all 0.5s;  
-    margin-top: 12rem; 
-    margin-left: 90px;
+    margin-left: 60vw;
 }
 
 .intro-button:hover{
@@ -278,96 +285,218 @@
 /*Dispositivos Móveis*/
 
 @media only screen and (max-width: 767px) {
-    .header{
-      width: 100%;
+
+   .header-content{
+    padding: 8rem 1rem;
+    align-items: end;
+    text-align: end;
+    h1{
+        width: 100%;
+        padding-right: 0;
+        font-size: 17px;
     }
-    .header-content{
-        h1{
-            font-size: 1.2rem;
-        }
-    }
-    .psychologic-img img{
-        width: 240px; /* Ajuste o tamanho da imagem conforme necessário */
-        height: auto; /* Mantém a proporção da imagem */
-        margin-top: 3.5em;
-    }
-    .about-us-content{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin-top: 3em;
-        color: var(--preto-text);
-        margin-bottom: 150px;
-        h1{
-            text-align: left;
-            font-size: 25px;
-            padding-left: 16em;
-            padding-right: 4em;
-            margin-bottom: 10px;
-    
-        }
-        p{
-           text-align: left;
-            font-size: 15px;
-            padding-right: 2em;
-        }
-    }
-    
-    .about-us-content-1{
-       
-            display: flex;
-            flex-direction: column;
-            margin-top: 5em;
-            color: var(--preto-text);
-            margin-bottom: 45vw;
-            padding-left: 1em;
-            h1{
-                text-align: left;
-                font-size: 25px;
-                margin-bottom: 10px;
-        
-            }
-            p{
-                text-align: left;
-                width: 60%;
-                font-size:15px;
-                padding-right: 5.3em;
-            }
-        }   
-    
-.img-lapada{
-    position: absolute;
-    z-index: -1;
-    margin-top: -100px;
-    margin-left: 450px;
+   }
+   .about-us-inner{
+    flex-direction: column;
+    align-items: center;
+   }
+
+   .psychologic-img {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    max-width: 200px;
+    margin-bottom: 1rem;  /* Espaço entre a imagem e o texto */
 }
 
-.intro-button{
-    max-height: 50px;
-    padding: 0.75rem 2rem;
-    font-size: 14px;
-    background-color: var(--amarelo-main);
-    color: var(--preto-text);
-    font-weight: bold;
-    border-radius: 8px;
-    border: 0.8px solid var(--laranja-bord);
-    cursor: pointer;
-    transition: all 0.5s;  
-    margin-top: 12rem; 
-    margin-left: 1px;
+.about-us-biography {
+    width: 100%;
+    padding-left: 3vw;
+    h1{
+        margin-bottom: 10px;
+    }
+    p{
+    font-size: 18px;
+    text-align: left;
+}
+}
+
+.none-bar{
+    display: none;
+}
+.curiosity-back, .curiosity-img{
+    height: 600px;
+}
+.curiosity-title{
+    flex-direction: column;
+    gap: 10px;
+    font-size: 1.8rem;
+}
+.curiosity-description p{
+    font-size: 1.2rem;
+    width: 80vw;
+}
+
+.img-lamp-box img{
+    margin-top: 70vh;
+    width: 20vw;
+    
+}
+ .intro-button{
+    padding: 12px 0px 12px 0px;
+    margin: 0;
+    max-width: 60vw;
+    margin-left: 15vw;
+ }
+.about-us-inner-2{
+    width: 150vw;
+    padding: 1rem;
+    h1{
+        font-size: 24px;
+    }
 }
 
 .footer{
-    padding: 50px 40px;
+    padding: 3rem 1rem;
+    flex-direction: column;
+}
+.footer-content{
+    flex-direction: column;
+    gap: 2rem;
 }
 .footer-left{
+    width: 100%;
     h2{
-        font-size: 30px;
-    }
-    button{
-        padding: 15px 10px 15px 10px;
-        font-size: 1em;
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
     }
 }
+.footer-right{
+    text-align: left;
+}
+.right-content{
+    font-size: 1.2rem;
+}
+.footer-social{
+    justify-content: start;
+    a{
+        font-size: 2.8rem;
+    }
+}
+.footer-copy{
+    text-align: center;
+    font-size: 1rem;
+}
+/*Footer*/
 
 }
+
+/* Tablets */
+
+@media only screen and  (min-width: 768px) and (max-width: 1024px) {
+
+    .header-content{
+     padding: 8rem 1rem;
+     align-items: end;
+     text-align: end;
+     margin: 0;
+     h1{
+         padding-right: 0;
+         font-size: 24px;
+     }
+    }
+    .about-us-inner{
+     flex-direction: column;
+     align-items: center;
+    }
+ 
+    .psychologic-img {
+     padding: 0;
+     margin: 0;
+     width: 100%;
+     max-width: 300px;
+     margin-bottom: 1rem;  /* Espaço entre a imagem e o texto */
+ }
+ 
+ .about-us-biography {
+     width: 100%;
+     padding-left: 3vw;
+     h1{
+        font-size: 40px;
+         margin-bottom: 15px;
+     }
+     p{
+     font-size: 25px;
+     text-align: left;
+ }
+ }
+ 
+ .curiosity-back, .curiosity-img{
+     height: 600px;
+ }
+ .curiosity-title{
+     flex-direction: column;
+     gap: 10px;
+     font-size: 1.8rem;
+ }
+ .curiosity-description p{
+     font-size: 1.7rem;
+     width: 80vw;
+ }
+ 
+ .img-lamp-box img{
+     margin-top: 70vh;
+     width: 20vw;
+     
+ }
+  .intro-button{
+     padding: 12px 0px 12px 0px;
+     margin: 0;
+     max-width: 60vw;
+     margin-left: 15vw;
+  }
+ .about-us-inner-2{
+     width: 150vw;
+     padding: 1rem;
+     h1{
+         font-size: 40px;
+     }
+     p{
+        font-size: 25px;
+     }
+ }
+ 
+ .footer{
+     padding: 3rem 1rem;
+     flex-direction: column;
+ }
+ .footer-content{
+     flex-direction: column;
+     gap: 2rem;
+ }
+ .footer-left{
+     width: 100%;
+     h2{
+         font-size: 1.5rem;
+         margin-bottom: 1rem;
+     }
+ }
+ .footer-right{
+     text-align: left;
+ }
+ .right-content{
+     font-size: 1.2rem;
+ }
+ .footer-social{
+     justify-content: start;
+     a{
+         font-size: 2.8rem;
+     }
+ }
+ .footer-copy{
+     text-align: center;
+     font-size: 1rem;
+ }
+ /*Footer*/
+ 
+ }
