@@ -515,7 +515,7 @@ body {
         transform: translateY(-8px) rotate(-50deg);
     }
     .navigation-links{
-        display: flex;
+        display: none;
         align-items: center;
         gap: 15px;
         position: absolute;
@@ -529,6 +529,7 @@ body {
         transition: 0.3s;
     }
     .navigation-links.ativo{
+        display: flex;
         right: 0;
     }
     .nav-link{
