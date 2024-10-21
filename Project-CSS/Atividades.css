@@ -7,7 +7,7 @@
     gap: 32px;
 
 
-    
+
     max-width: 90%;
     margin: 0 auto;
     height: auto; /* Removido o valor fixo */
@@ -37,7 +37,7 @@
                 0px 1px 1px rgba(63, 63, 63, 0.1),
                 inset 0px -1px 0px rgba(0, 0, 0, 0.15);
     border-radius: 8px;
-   
+
     cursor: pointer;
     transition: all 1s;
 }
@@ -120,7 +120,7 @@ div#music-activitie, div#medical-activitie, div#later-activitie {
     align-items: flex-end;
     gap: 16px;
     max-width: 544px;
-    
+
 }
 
 div.activitie-text > h1{
@@ -128,7 +128,7 @@ div.activitie-text > h1{
 }
 
 .activitie-text-p-box{
-    
+
     text-align: end;
 
     p{
@@ -154,7 +154,7 @@ div.activitie-text > h1{
 div#medical-activitie{
     div.icon-medical{
         order: 2;
-        
+
     }
 }
 
@@ -163,7 +163,7 @@ div#medical-activitie{
     align-items: start;
 
     h1{
-        
+
         font-size: 2em;
     }
 
@@ -182,8 +182,6 @@ section.feedback {
     padding: 40px 0;
     height: auto;
 }
-
-
 .feedback-grid {
     display: flex;
     flex-direction: row;
@@ -192,7 +190,6 @@ section.feedback {
     max-width: 1120px;
     margin: 0 auto;
 }
-
 .feedback-card {
     display: flex;
     flex-direction: row;
@@ -238,7 +235,7 @@ section.feedback {
     }
 
 
-    
+
 }
 
 
@@ -259,11 +256,11 @@ div.main-top{
 }
 
 .main-top-button{
-    
+
     max-width: 370px;
     height: 75px;
     gap: 10px;
-    
+
 }
     /* Fim do header */
 
@@ -272,24 +269,24 @@ div.main-top{
         gap: 10%;
         display: flex;
         flex-direction: column;
-        
+
     }
 
     #music-activitie > div.activitie-text, 
 #medical-activitie > div.activitie-text-left, 
 #later-activitie > div.activitie-text{
     align-items: center;
-    
+
 }
 /*Inicio atividade inversa*/
 div#medical-activitie{
     div.icon-medical{
         order: 0;
-        
+
     }
 
      div.activitie-text-left{
-        
+
         align-items: center;
 }
 
@@ -315,7 +312,7 @@ div#medical-activitie{
 }
 
 div.activitie-text, div.activitie-text-left{
-   
+
     padding-left: 5px;
     padding-right: 5px;
     p{
@@ -324,10 +321,10 @@ div.activitie-text, div.activitie-text-left{
 }
 
 .activitie-text-p-box, .activitie-text-p-box-left{
-    
+
     text-align: justify;
-   
-    
+
+
 }
 
 
@@ -335,22 +332,16 @@ div.activitie-text, div.activitie-text-left{
 .text-colum{
     display: flex;
     flex-direction: column;
-    
+
 }
 
 /* Testimonials section */
-
 .testimonial-card-responsive-text{
     width: auto;
     height: auto;
     padding: 10px;
     
 }
-
-
-
-
-
 .testimonials-title {
     text-align: center; /* Centraliza o texto do título */
     line-height: 1rem;
@@ -388,7 +379,7 @@ div.activitie-text, div.activitie-text-left{
     border-radius: 1rem;
     display: flex;
     align-items: flex-start; /* Centraliza verticalmente os elementos no cartão */
-    
+
     gap: 1rem;
 }
 
@@ -401,7 +392,4 @@ div.activitie-text, div.activitie-text-left{
     width: 48vw;
     max-width: 300px; /* Limita a largura do texto */
 }
-
-
-
 }
