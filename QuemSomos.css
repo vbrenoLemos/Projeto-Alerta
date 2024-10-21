@@ -10,10 +10,16 @@
     --preto-true: #000000;
     --branco: #FAFAFAFA;
     --branco-true: #FFFFFF;
-    
+
 }
-
-
+body {
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    width: 100vw;
+    background-color: var(--branco);
+    color: var(--preto-text);
+    overflow-x: hidden;
+}
 .header-background{             /* Background do "header" - Gradient preto */
     background-image: linear-gradient(to right, #4A4A4A, var(--preto-true));
     background-repeat: no-repeat;
@@ -44,9 +50,9 @@
         padding-right: 4em;
         line-height: 1.1em;
         padding-bottom: 70px;
-        
+
     }
-    
+
 }
 
 /* Fim do Header */
@@ -61,7 +67,6 @@
     width: 100%; /* Garantir que o contêiner ocupe a largura completa */
     padding: 20px; /* Adicionar um espaço interno opcional */
 }
-
 .about-us-inner {
     flex: 2; /* O conteúdo textual ocupa mais espaço */
     width: 100%; /* Garantir que o conteúdo ocupe toda a largura disponível */
@@ -74,17 +79,12 @@
         font-size: 20px;
     }
 }
-
-
-
 .psychologic-img {
     flex: 1; /* A imagem ocupa menos espaço em relação ao texto */
     max-width: 100%; /* Garantir que a imagem não ultrapasse o contêiner */
     margin-left: 20px; /* Espaço entre a imagem e o texto */
     margin-bottom: 15vh;
 }
-
-
 
 .psychologic-img img {
     width: 100%;
@@ -93,7 +93,7 @@
 }
 
 .about-us-content{
-    
+
         display: flex;
         flex-direction: column;
         color: var(--preto-text);
@@ -103,7 +103,7 @@
             text-align: left;
             font-size: 30px;
             margin-bottom: 10px;
-    
+
         }
         p{
             text-align: left;
@@ -111,7 +111,7 @@
             font-size: 20px;
             margin-bottom: 50px;
         }
-    }   
+    } 
 
     .about-us-biography{
         background-color: var(--branco-true);
@@ -138,7 +138,6 @@
         }
     
     }
-
 
 .curiosity-section {
     display: flex;
@@ -204,7 +203,7 @@
 
     background-color: var(--amarelo-main);
     color: var(--preto-text);
- 
+
     border-radius: 10px;
     border: none;
 
@@ -229,8 +228,8 @@
 
 
 .intro-button{
-    max-width: 100%;
-    width: 25vw;
+    max-width: 25vw;
+    max-height: 10vh;
     padding: 0.75rem 2rem;
     font-size: 1.2rem;
     background-color: var(--amarelo-main);
@@ -239,7 +238,8 @@
     border-radius: 8px;
     border: 0.8px solid var(--laranja-bord);
     cursor: pointer;
-    transition: all 0.5s;
+    transition: all 0.5s;  
+    margin-left: 60vw;
 }
 
 .intro-button:hover{
@@ -308,6 +308,7 @@
 
 @media only screen and (max-width: 767px) {
 
+
    .header-content{
     padding: 8rem 1rem;
     align-items: end;
@@ -332,11 +333,9 @@
     margin-bottom: 1rem;  /* Espaço entre a imagem e o texto */
 }
 
-
 .about-us-inner{
     margin-bottom: 13vh;
 }
-
 
 .none-bar{
     display: none;
@@ -363,44 +362,39 @@
     align-items: center; /* Centralizar os itens */
     width: 100%; /* Garantir que o contêiner ocupe a largura total */
 }
-
 .about-us-inner-2 {
     width: 150vw; /* Garantir que o texto ocupe toda a largura disponível */
     text-align: left; /* Alinhar o texto à esquerda */
     padding: 0 1rem; /* Adicionar padding para os lados */
     padding-left: 30vw;
 }
-
 .about-us-inner-2 h1 {
     font-size: 24px; /* Ajustar o tamanho da fonte do título */
 }
-
 .about-us-inner-2 p {
     font-size: 18px; /* Ajustar o tamanho da fonte do parágrafo */
     line-height: 1.5; /* Melhorar a legibilidade */
 }
-
 .about-us-biography {
     width: 100%; /* Garantir que a biografia ocupe toda a largura */
     text-align: left; /* Alinhar o texto à esquerda */
     padding: 0 1rem; /* Espaço lateral */
     margin-top: 2rem; /* Espaço entre a biografia e a aula de música */
 }
-
 .about-us-biography img {
     max-width: 100%; /* Imagem ocupa 100% do contêiner */
     height: auto; /* Manter a proporção da imagem */
     margin-bottom: 1rem; /* Espaço abaixo da imagem */
 }
-
 .about-us-biography p {
     font-size: 16px; /* Ajustar o tamanho da fonte do parágrafo */
     line-height: 1.5; /* Melhorar a legibilidade */
 }
-}
+
+
 .img-lamp-box img{
     width: 30vw;
-    
+
 }
  .intro-button{
     padding: 12px 0px 12px 0px;
@@ -441,6 +435,7 @@
     font-size: 1rem;
 }
 /*Footer*/
+}
 
 
 /* Tablets */
@@ -477,13 +472,11 @@
             font-size: 30px;
             text-align: center;
         }
-
         p{
             font-size: 28px;
         }
         margin-bottom: 10vh;
     }
-
  .about-us-biography {
      width: 100%;
      padding-left: 3vw;
@@ -496,7 +489,7 @@
      text-align: left;
  }
  }
- 
+
  .curiosity-back, .curiosity-img{
      height: 600px;
  }
@@ -509,10 +502,10 @@
      font-size: 1.7rem;
      width: 80vw;
  }
- 
+
  .img-lamp-box img{
      width: 15vw;
-     
+
  }
   .intro-button{
      padding: 12px 0px 12px 0px;
@@ -532,7 +525,7 @@
         font-size: 25px;
      }
  }
- 
+
  .footer{
      padding: 3rem 1rem;
      flex-direction: column;
@@ -565,5 +558,4 @@
      font-size: 1rem;
  }
  /*Footer*/
- 
- }
+}
