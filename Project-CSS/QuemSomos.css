@@ -347,7 +347,7 @@ body {
 }
 .curiosity-description p{
     font-size: 1.2rem;
-    width: 80vw;
+    width: 400px;
 }
 .about-us-box-2 {
     padding: 0 1rem; /* Espaço lateral */
@@ -360,10 +360,10 @@ body {
     width: 100%; /* Garantir que o contêiner ocupe a largura total */
 }
 .about-us-inner-2 {
-    width: 150vw; /* Garantir que o texto ocupe toda a largura disponível */
+    width: 100%; /* Garantir que o texto ocupe toda a largura disponível */
     text-align: left; /* Alinhar o texto à esquerda */
     padding: 0 1rem; /* Adicionar padding para os lados */
-    padding-left: 30vw;
+    padding-left: 2vw;
 }
 .about-us-inner-2 h1 {
     font-size: 24px; /* Ajustar o tamanho da fonte do título */
@@ -390,13 +390,13 @@ body {
 
 
 .img-lamp-box img{
-    width: 30vw;
+    width: 120px;
 
 }
  .intro-button{
     padding: 12px 0px 12px 0px;
     margin: 0 auto;
-    max-width: 60vw;
+    max-width: 200px;
     margin-bottom: 10vh;
  }
 
