@@ -53,41 +53,38 @@
 
 /* Inicio Sobre nós */
 
+.about-us-box {
+    display: flex;
+    flex-direction: row; /* Colocar os itens lado a lado */
+    justify-content: space-between; /* Espaçamento entre os itens */
+    align-items: flex-start; /* Alinhamento superior dos itens */
+    width: 100%; /* Garantir que o contêiner ocupe a largura completa */
+    padding: 20px; /* Adicionar um espaço interno opcional */
+}
+
 .about-us-inner {
-    display: flex;
-    width: 100%;
-}
-.about-us-inner-2{
-    display: flex;
-    flex-direction: column;
-}
-.about-us-biography{
-    flex:2;
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 3em;
-    color: var(--preto-text);
-    margin-bottom: 150px;
+    flex: 2; /* O conteúdo textual ocupa mais espaço */
+    width: 100%; /* Garantir que o conteúdo ocupe toda a largura disponível */
+    padding: 20px; /* Espaçamento interno para o conteúdo */
     h1{
         font-size: 30px;
+        margin-bottom: 20px;
     }
     p{
-    font-size: 18px;
+        font-size: 20px;
     }
-    li{
-        list-style: none;
-    }
+}
 
-}
+
+
 .psychologic-img {
-    flex: 1;
-    margin-left: 3em;
-    margin-right: 8vw;
-    max-width: 100%;
-    padding-top: 15vh;
+    flex: 1; /* A imagem ocupa menos espaço em relação ao texto */
+    max-width: 100%; /* Garantir que a imagem não ultrapasse o contêiner */
+    margin-left: 20px; /* Espaço entre a imagem e o texto */
+    margin-bottom: 15vh;
 }
+
+
 
 .psychologic-img img {
     width: 100%;
@@ -111,10 +108,36 @@
         p{
             text-align: left;
             width: 60%;
-            font-size: 18px;
+            font-size: 20px;
             margin-bottom: 50px;
         }
     }   
+
+    .about-us-biography{
+        background-color: var(--branco-true);
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        max-width: 1000px;
+        margin: 0 auto;
+        margin-top: 5vh;
+        margin-bottom: 5vh;
+        img{
+            margin-top: -5vh;
+            margin-bottom: 3vh;
+        }
+        p{
+        font-size: 18px;
+     
+        }
+        li{
+            list-style: none;
+        }
+    
+    }
 
 
 .curiosity-section {
@@ -206,7 +229,7 @@
 
 
 .intro-button{
-    max-width: 30vw;
+    max-width: 25vw;
     max-height: 10vh;
     padding: 0.75rem 2rem;
     font-size: 1.2rem;
@@ -296,7 +319,7 @@
         font-size: 17px;
     }
    }
-   .about-us-inner{
+   .about-us-box{
     flex-direction: column;
     align-items: center;
    }
@@ -306,20 +329,15 @@
     margin: 0;
     width: 100%;
     max-width: 200px;
+    margin-top: -10vh;
     margin-bottom: 1rem;  /* Espaço entre a imagem e o texto */
 }
 
-.about-us-biography {
-    width: 100%;
-    padding-left: 3vw;
-    h1{
-        margin-bottom: 10px;
-    }
-    p{
-    font-size: 18px;
-    text-align: left;
+
+.about-us-inner{
+    margin-bottom: 13vh;
 }
-}
+
 
 .none-bar{
     display: none;
@@ -336,25 +354,61 @@
     font-size: 1.2rem;
     width: 80vw;
 }
+.about-us-box-2 {
+    padding: 0 1rem; /* Espaço lateral */
+}
 
+.about-us-content {
+    display: flex;
+    flex-direction: column; /* Colocar os itens um abaixo do outro */
+    align-items: center; /* Centralizar os itens */
+    width: 100%; /* Garantir que o contêiner ocupe a largura total */
+}
+
+.about-us-inner-2 {
+    width: 150vw; /* Garantir que o texto ocupe toda a largura disponível */
+    text-align: left; /* Alinhar o texto à esquerda */
+    padding: 0 1rem; /* Adicionar padding para os lados */
+    padding-left: 30vw;
+}
+
+.about-us-inner-2 h1 {
+    font-size: 24px; /* Ajustar o tamanho da fonte do título */
+}
+
+.about-us-inner-2 p {
+    font-size: 18px; /* Ajustar o tamanho da fonte do parágrafo */
+    line-height: 1.5; /* Melhorar a legibilidade */
+}
+
+.about-us-biography {
+    width: 100%; /* Garantir que a biografia ocupe toda a largura */
+    text-align: left; /* Alinhar o texto à esquerda */
+    padding: 0 1rem; /* Espaço lateral */
+    margin-top: 2rem; /* Espaço entre a biografia e a aula de música */
+}
+
+.about-us-biography img {
+    max-width: 100%; /* Imagem ocupa 100% do contêiner */
+    height: auto; /* Manter a proporção da imagem */
+    margin-bottom: 1rem; /* Espaço abaixo da imagem */
+}
+
+.about-us-biography p {
+    font-size: 16px; /* Ajustar o tamanho da fonte do parágrafo */
+    line-height: 1.5; /* Melhorar a legibilidade */
+}
+}
 .img-lamp-box img{
-    margin-top: 70vh;
-    width: 20vw;
+    width: 30vw;
     
 }
  .intro-button{
     padding: 12px 0px 12px 0px;
     margin: 0;
     max-width: 60vw;
-    margin-left: 15vw;
+    margin-bottom: 10vh;
  }
-.about-us-inner-2{
-    width: 150vw;
-    padding: 1rem;
-    h1{
-        font-size: 24px;
-    }
-}
 
 .footer{
     padding: 3rem 1rem;
@@ -389,7 +443,6 @@
 }
 /*Footer*/
 
-}
 
 /* Tablets */
 
@@ -405,19 +458,33 @@
          font-size: 24px;
      }
     }
-    .about-us-inner{
-     flex-direction: column;
-     align-items: center;
+    .about-us-box{
+        flex-direction: column;
+        align-items: center;
+       }
+    
+       .psychologic-img {
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        max-width: 200px;
+        margin-top: -10vh;
+        margin-bottom: 1rem;  /* Espaço entre a imagem e o texto */
     }
- 
-    .psychologic-img {
-     padding: 0;
-     margin: 0;
-     width: 100%;
-     max-width: 300px;
-     margin-bottom: 1rem;  /* Espaço entre a imagem e o texto */
- }
- 
+    
+    
+    .about-us-inner{
+        h1{
+            font-size: 30px;
+            text-align: center;
+        }
+
+        p{
+            font-size: 28px;
+        }
+        margin-bottom: 10vh;
+    }
+
  .about-us-biography {
      width: 100%;
      padding-left: 3vw;
@@ -445,18 +512,19 @@
  }
  
  .img-lamp-box img{
-     margin-top: 70vh;
-     width: 20vw;
+     width: 15vw;
      
  }
   .intro-button{
      padding: 12px 0px 12px 0px;
      margin: 0;
-     max-width: 60vw;
-     margin-left: 15vw;
+     max-width: 35vw;
+     margin-left: 32vw;
+     margin-bottom: 5vh;
+     
   }
  .about-us-inner-2{
-     width: 150vw;
+     width: 110vw;
      padding: 1rem;
      h1{
          font-size: 40px;
