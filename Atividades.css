@@ -174,7 +174,7 @@ div#medical-activitie{
 
 /*Fim elementos de atividades inverso*/
 
-
+/* Antiga area de testimonials
 section.feedback {
     text-align: center;
     max-width: 90%;
@@ -205,7 +205,7 @@ section.feedback {
     border: 1px solid #DCDCDC;
     border-radius: 16px;
 }
-
+*/
 .footer-activitie {
     background: linear-gradient(to right, #4A4A4A, var(--preto-text));
     color: white;
@@ -339,6 +339,18 @@ div.activitie-text, div.activitie-text-left{
 }
 
 /* Testimonials section */
+
+.testimonial-card-responsive-text{
+    width: auto;
+    height: auto;
+    padding: 10px;
+    
+}
+
+
+
+
+
 .testimonials-title {
     text-align: center; /* Centraliza o texto do título */
     line-height: 1rem;
@@ -369,13 +381,13 @@ div.activitie-text, div.activitie-text-left{
 .testimonial-card {
     width: 80vw;
     max-width: 400px; /* Limita a largura máxima dos cartões */
-    height: 180px;
+    height: auto;
     padding: 0.5rem;
     background-color: #fff; /* Cor de fundo branca */
     box-shadow: 0px 4px 10px 3px rgba(0, 0, 0, 0.1); /* Sombra ao redor do cartão */
     border-radius: 1rem;
     display: flex;
-    align-items: center; /* Centraliza verticalmente os elementos no cartão */
+    align-items: flex-start; /* Centraliza verticalmente os elementos no cartão */
     
     gap: 1rem;
 }
