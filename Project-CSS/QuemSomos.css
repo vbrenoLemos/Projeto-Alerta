@@ -432,6 +432,12 @@ body {
     font-size: 1rem;
 }
 /*Footer*/
+
+.header-background, .curiosity-img {
+    max-width: 100%;
+    width: 100%;
+}
+
 }
 
 
