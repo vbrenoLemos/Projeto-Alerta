@@ -229,8 +229,8 @@
 
 
 .intro-button{
-    max-width: 25vw;
-    max-height: 10vh;
+    max-width: 100%;
+    width: 25vw;
     padding: 0.75rem 2rem;
     font-size: 1.2rem;
     background-color: var(--amarelo-main);
@@ -239,8 +239,7 @@
     border-radius: 8px;
     border: 0.8px solid var(--laranja-bord);
     cursor: pointer;
-    transition: all 0.5s;  
-    margin-left: 60vw;
+    transition: all 0.5s;
 }
 
 .intro-button:hover{
