@@ -300,10 +300,17 @@ div#medical-activitie{
     text-align: justify;
 }
 /*fim atividade inversa*/
+#music-activitie > .icon-music, 
+    #medical-activitie > .icon-medical, 
+    #later-activitie > .icon-alert{
+        height: 230px;
+    }
+
+
     #music-activitie > .icon-music > img, 
     #medical-activitie > .icon-medical > img, 
     #later-activitie > .icon-alert > img {
-    height: 200px;
+    height: 165px;
     width: 100px;
 }
 
