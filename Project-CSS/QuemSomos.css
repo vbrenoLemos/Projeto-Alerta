@@ -9,7 +9,8 @@
     --preto-text: #303030;
     --preto-true: #000000;
     --branco: #FAFAFAFA;
-    --branco-true: #FFFFFF;
+    --branco-true: #FFFFFF; 
+    
 
 }
 body {
@@ -235,7 +236,7 @@ body {
     border: 0.8px solid var(--laranja-bord);
     cursor: pointer;
     transition: all 0.5s;  
-    margin-left: 60vw;
+    margin: 0 auto;
 }
 
 .intro-button:hover{
@@ -394,7 +395,7 @@ body {
 }
  .intro-button{
     padding: 12px 0px 12px 0px;
-    margin: 0;
+    margin: 0 auto;
     max-width: 60vw;
     margin-bottom: 10vh;
  }
@@ -507,7 +508,8 @@ body {
      padding: 12px 0px 12px 0px;
      margin: 0;
      max-width: 35vw;
-     margin-left: 32vw;
+     margin-left: 40vw;
+     margin-right: -40vw;
      margin-bottom: 5vh;
     
   }
