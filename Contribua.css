@@ -1,0 +1,148 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    --amarelo-main: #f5da17;
+    --amarelo-hover: #FFC300;
+    --laranja-bord: #c26c2f;
+    --card-border: #0B132412;
+    --preto-text: #303030;
+    --preto-true: #000000;
+    --branco: #FAFAFAFA;
+    --branco-true: #FFFFFF;
+    --branco-back1: #F4F4F4;
+}
+
+/*Início do Header*/
+.header-background{
+    position: absolute;
+    width: 100%;
+    height: 300px;
+}
+.header-content{
+    display: flex;
+    width: 100%;
+    align-items: end;
+    padding: 10rem 2rem 0;
+    margin-bottom: 0;
+    h1{
+        text-align: end;
+        padding-bottom: 60px;
+    }
+}
+/*Fim do header*/
+
+/*Início do associate*/
+.associate{
+    width: 100%;
+    background-color: var(--branco-back1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+}
+.associate-text{
+    h2{
+        width: 400px;
+        font-size: 2rem;
+        margin-bottom: 1rem;
+    }
+    p{
+        width: 468px;
+        margin-bottom: 0.8rem;
+        font-size: 1.2rem;
+    }
+}
+/*Fim do associate*/
+
+/*Inicio do qrCode*/
+.qrCode{
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+    padding: 20px 0;
+    gap: 1rem;
+    h2{
+        width: 400px;
+        font-size: 2rem;
+    }
+}
+/*Fim do qrCode*/
+
+@media only screen and  (min-width: 768px) and (max-width: 1024px){
+    .header-content{
+        h1{
+            padding-bottom: 30px;
+            width: 90vw;
+        }
+    }
+    .associate{
+        padding: 15px 0;
+        gap: 2rem;
+        img{
+            width: 230px;
+        }
+    }
+    .associate-text{
+        h2{
+            font-size: 1.8rem;
+        }
+        p{
+            width: 450px;
+        }
+    }
+}
+
+@media only screen and (max-width: 767px){
+    .header-background{
+        height: 220px;
+    }
+    .header-content{
+        padding: 7rem 1rem 0;
+        h1{
+            padding-bottom: 30px;
+            font-size: 0.9rem;
+            width: 80vw;
+        }
+    }
+    .associate{
+        flex-direction: column-reverse;
+        padding: 10px 0;
+        gap: 1rem;
+        img{
+            width: 200px;
+            margin: auto;
+        }
+    }
+    .associate-text{
+        text-align: center;
+        h2{
+            margin: auto;
+            text-align: center;
+            width: 80vw;
+            font-size: 1.3rem;
+        }
+        p{
+            margin: 1rem auto;
+            text-align: center;
+            width: 85vw;
+            font-size: 1rem;
+        }
+    }
+    .qrCode{
+        flex-direction: column-reverse;
+        margin: auto;
+        h2{
+            margin: auto;
+            font-size: 1.8rem;
+            width: 73vw;
+            text-align: center;
+        }
+        img{
+            margin: auto;
+        }
+    }
+}
