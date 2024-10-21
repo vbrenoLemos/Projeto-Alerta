@@ -36,20 +36,19 @@ body {
 .header-content{
     padding: 10.6rem 0rem 2% 6.25rem;
     color: var(--branco);
-    align-items: flex-end;
+    align-items: flex-start;
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: right;
     width: 100%;
-
+    margin-bottom: 20vh;
     h1{
         width: 70%; 
         font-size: 1.5em;
         margin-bottom: 0;
         padding-right: 4em;
         line-height: 1.1em;
-        padding-bottom: 70px;
 
     }
 
@@ -504,7 +503,7 @@ body {
  }
 
  .img-lamp-box img{
-     width: 15vw;
+     width: 30vw;
 
  }
   .intro-button{
