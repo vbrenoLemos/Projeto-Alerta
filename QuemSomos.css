@@ -36,11 +36,11 @@ body {
 .header-content{
     padding: 10.6rem 0rem 2% 6.25rem;
     color: var(--branco);
-    align-items: flex-start;
+    align-items: flex-end;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    text-align: right;
+    text-align: lefit;
     width: 100%;
     margin-bottom: 20vh;
     h1{
