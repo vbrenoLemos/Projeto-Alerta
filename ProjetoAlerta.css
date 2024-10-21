@@ -328,7 +328,7 @@ body {
 .testimonial-card {
     display: flex;
     width: 350px;
-    height: 160px;
+
 
     background: var(--branco-true);
 
@@ -350,7 +350,7 @@ body {
     h3{
         font-size: 1.5rem;
         font-weight: bold;
-        margin-bottom: 8px;
+        margin-bottom: 5px;
     }
 }
 /*Fim da testimonials section*/
@@ -643,7 +643,6 @@ body {
     }
     .testimonial-card{
         width: 80vw;
-        height: 180px;
         padding: 0.5rem;
         img{
             height: 2rem;
