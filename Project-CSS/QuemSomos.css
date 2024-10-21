@@ -146,7 +146,7 @@ body {
 }
 .curiosity-img {
     position: absolute;
-    background-image: url(assets/curiosity-img.png);
+    background-image: url(../assets/curiosity-img.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -458,7 +458,7 @@ body {
         margin: 0;
         width: 100%;
         max-width: 200px;
-        margin-top: -10vh;
+        margin-top: 10vh;
         margin-bottom: 1rem;  /* Espaço entre a imagem e o texto */
     }
     
@@ -509,7 +509,11 @@ body {
      max-width: 35vw;
      margin-left: 32vw;
      margin-bottom: 5vh;
-     
+    
+  }
+
+  .intro-button-link{
+    text-decoration: none;
   }
  .about-us-inner-2{
      width: 110vw;
