@@ -236,7 +236,7 @@ body {
     border: 0.8px solid var(--laranja-bord);
     cursor: pointer;
     transition: all 0.5s;  
-    margin: 0 auto;
+    margin-left: 65vw;
 }
 
 .intro-button:hover{

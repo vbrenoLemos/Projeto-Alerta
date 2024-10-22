@@ -6,6 +6,14 @@ function navegarUrlQuemSomos(){
     window.location.href = 'QuemSomos.html'
 }
 
+function ChatWhatsApp(){
+    window.location.href = 'https://wa.me/558189543669'
+}
+
+function ChatEmail(){
+    window.location.href = ''
+}
+
 // Função do header celular
 const navMenu = document.querySelector('.navigation-links');
 
