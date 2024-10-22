@@ -10,8 +10,8 @@ function ChatWhatsApp(){
     window.location.href = 'https://wa.me/558189543669'
 }
 
-function ChatEmail(){
-    window.location.href = ''
+function ChatInstagram(){
+    window.location.href = 'https://www.instagram.com/institutoalerta/'
 }
 
 // Função do header celular
