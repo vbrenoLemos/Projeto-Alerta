@@ -72,7 +72,7 @@ body {
 }
 /*Fim header section*/
 .header-background{             /* Background do "header" - imagem das crianças */
-    background-image: url(../assets/header-img.png);
+    background-image: url(assets/header-img.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -255,7 +255,7 @@ body {
 }
 .curiosity-img {
     position: absolute;
-    background-image: url(../assets/curiosity-img.png);
+    background-image: url(assets/curiosity-img.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
