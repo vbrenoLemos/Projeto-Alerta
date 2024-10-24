@@ -6,6 +6,10 @@ function navegarUrlQuemSomos(){
     window.location.href = 'QuemSomos.html'
 }
 
+function navegarUrlContribua(){
+    window.location.href = 'Contribua.html'
+}
+
 function ChatWhatsApp(){
     window.location.href = 'https://wa.me/558189543669'
 }

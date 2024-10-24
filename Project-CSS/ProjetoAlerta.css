@@ -400,6 +400,7 @@ body {
     display: flex;
     justify-content: flex-end;
     gap: 1rem;
+    cursor: pointer;
     a{
         font-size: 3rem;
         color: var(--branco-true);
