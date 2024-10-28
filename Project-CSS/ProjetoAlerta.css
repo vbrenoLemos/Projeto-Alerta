@@ -112,7 +112,7 @@ body {
     }
 }
 .contact-button{
-    width: 18rem;
+    width: 20rem;
 
     padding: 1rem 0.5rem;
 
@@ -158,6 +158,10 @@ body {
     width: 550px;
 }
 .intro-button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
     padding: 0.75rem 2rem;
     font-size: 1.2rem;
     background-color: var(--amarelo-main);
@@ -224,8 +228,12 @@ body {
         margin-bottom: 1.5rem;
     }
     button{
-        width: 8rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 10rem;
 
+        gap: 10px;
         padding: 0.8rem 0;
         border: 0.5px solid var(--laranja-bord);
         border-radius: 10px;
@@ -238,6 +246,10 @@ body {
 
         cursor: pointer;
         transition: all 1s;
+        img{
+            width: 20px;
+            margin: 0;
+        }
     }
     button:hover{
         background-color: var(--amarelo-hover);
@@ -543,8 +555,8 @@ body {
         padding: 7rem 1rem 2% 0.8rem;
         line-height: 3rem;
         h1{
-            font-size: 4rem;
-            line-height: 4rem;
+            font-size: 3.7rem;
+            line-height: 3.7rem;
             font-weight: bold;
         }
         p{
@@ -554,7 +566,7 @@ body {
     .contact-button{
         font-size: 1.2rem;
         padding: 1rem 0.5rem;
-        width: 15rem;
+        width: 18rem;
     }
     /*Header text + button*/
 
